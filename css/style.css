@@ -4,7 +4,8 @@
     --claro: #527f49;
     --oscuro: #083744;
     
-    --fuenteHeading: 'cabin', sans-serif;
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
 }
 
 /* Globales */
@@ -37,6 +38,7 @@ h1 {
     font-family: var(--fuenteHeading);
     color: var(--oscuro);
     padding: .5em;
+    text-align: center;
 }
 
 h2 {
@@ -55,10 +57,35 @@ h3 {
     color: var(--oscuro);
 }
 
+h4{
+    font-size: 25px;
+    text-align: center;
+    font-family:var(--fuenteHeading);
+    margin: 1rem;
+}
+
+h5 {
+    font-family: var(--fuenteHeading);
+    font-size: 20px;
+    margin: auto;
+}
+
+p {
+    font-family: var(--fuenteParrafos);
+    font-size: 17px;
+}
+
 /*barra Nav*/
 .barra-navegacion {
     display: flex;
     flex-direction: column;
+}
+
+.date {
+    text-align: center;
+    font-family: var(--fuenteHeading);
+    color: var(--oscuro);
+    font: bold;
 }
 
 @media(min-width: 768px) {
@@ -80,9 +107,10 @@ h3 {
 
 /*SERVICIOS*/
 .servicios li {
-    text-align: center;
-    list-style-type: none;
+    text-align: justify;
+    list-style-type: circle;
     padding: 1rem;
+    margin-left: 45rem;
 }
 
 img {
@@ -103,15 +131,15 @@ header {
 }
 
 .top-logo {
-    width: 190px;
+    width: 180px;
     height: 200px;
     margin-left: 30rem;
     padding-top: 3rem;
 }
 
 .icon {
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
     margin-left: 1rem;
 }
 
@@ -126,8 +154,14 @@ header {
 .foto {
     float: left;
     margin-right: 25px;
-    width: 30rem;
-    height: 350px;
+    width: 35rem;
+    height: 44rem;
+}
+
+.subtitle{
+    font-size: 20px;
+    font: bold;
+    padding: 0%;
 }
 
 /*FOOTER*/
@@ -138,29 +172,50 @@ footer {
 
 .bottom-logo {
     width: 180px;
-    height: 200px;
+    height: 150px;
     float: left;
-    margin-left: 175px;
-    padding-top: 5rem;
+    margin-right: 20px;
+    padding-top: 1rem;
+    margin-left: 180px;
 }   
 
 .contact {
     float: right;
-    margin-left: 300px;
+    margin-left: 250px;
     font-size: 17px;
 }
 
+.footer-info {
+    text-align: center;
+    font-size: 15px;
+}
+
+.abogados-titulo {
+    text-align: center;
+}
+
+.address {
+    text-align: justify;
+}
 
 /*CONTACT US*/
 .contacto {
+    text-align: justify;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    margin-bottom: 15rem;    
+}
+
+.contacto__titulo {
     text-align: center;
-    padding: 0%;
+    padding: 5rem;
 }
 
 .bloques {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    gap: 1rem;
+    margin: auto;
 }
 
 
