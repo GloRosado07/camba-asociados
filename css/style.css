@@ -37,7 +37,7 @@ body {
 h1 {
     font-family: var(--fuenteHeading);
     color: var(--oscuro);
-    padding: .5em;
+    padding: .1em;
     text-align: center;
 }
 
@@ -88,13 +88,6 @@ p {
     font: bold;
 }
 
-@media(min-width: 768px) {
-    .barra-navegacion {
-       flex-direction: row;
-       justify-content: space-evenly; 
-    }
-}
-
 .barra-navegacion, a {
     text-align: center;
     text-decoration: none;
@@ -102,15 +95,18 @@ p {
     font-weight: 600;
     color: var(--oscuro);
     font-size: 23px; 
-    margin-top: 80px;    
+    margin-top: 80px;  
+    flex-direction: row;
+    justify-content: space-evenly;   
 }
 
 /*SERVICIOS*/
 .servicios li {
     text-align: justify;
     list-style-type: circle;
-    padding: 1rem;
+    padding: 3rem;
     margin-left: 45rem;
+    font-size: 2.5rem;
 }
 
 img {
@@ -127,14 +123,14 @@ header {
 
 .talento {
     text-align: justify;
-    margin: 50px;
+    margin: 60px;
 }
 
 .top-logo {
-    width: 180px;
+    width: 190px;
     height: 200px;
-    margin-left: 30rem;
-    padding-top: 3rem;
+    margin-left: 35rem;
+    padding-top: 4rem;
 }
 
 .icon {
@@ -171,11 +167,11 @@ footer {
 }
 
 .bottom-logo {
-    width: 180px;
-    height: 150px;
+    width: 200px;
+    height: 190px;
     float: left;
     margin-right: 20px;
-    padding-top: 1rem;
+    padding-top: 5rem;
     margin-left: 180px;
 }   
 
@@ -192,6 +188,7 @@ footer {
 
 .abogados-titulo {
     text-align: center;
+    padding: 2rem;
 }
 
 .address {
@@ -216,7 +213,6 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     margin: auto;
+    text-align: center;
 }
-
-
 
